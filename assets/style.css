@@ -1,0 +1,138 @@
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    font-family:sans-serif;
+    font-size:130%;
+    background-color:#fafeff;
+}
+/*style for header*/
+header {
+    width:100%;
+    height:fit-content;
+    background-image:linear-gradient(to right, blue, #66f0fa);
+    color:white;
+    text-align:center;
+}
+
+main {
+    display:flex;
+    flex-direction:row;
+}
+
+ul {
+    list-style:none;
+}
+/*styling for the entire left side of the dashboard*/
+aside {
+    display:flex;
+    flex-direction:column;
+    min-width:fit-content;
+    width:23%;
+    min-height:600px;
+}
+
+.buffer {
+    margin:5px 15px;
+    padding:5px 15px;
+}
+
+aside div {
+    display:flex;
+    flex-direction:column;
+}
+
+aside div label {
+    margin:5px 15px;
+    padding:5px 0;
+}
+  
+#search {
+    font-size:20px;
+}
+
+aside span {
+    border-bottom:solid 3px black;
+    border-radius:2px;
+}
+
+#searchHistoryButtons {
+    margin:15px 15px;
+}
+
+#searchHistoryButtons button {
+    margin-bottom:8px;
+    font-size:15px;
+    height:24px;
+}
+
+/*main styling for the dashboard*/
+.page {
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    padding:10px;
+    width:65%;
+}
+
+.todayForecast {
+    margin-bottom:20px;
+    padding:10px;
+    border:solid 2px black;
+    width:100%;
+}
+
+.todayForecast ul li {
+    margin:20px 0;
+}
+
+.page h3 {
+    margin-bottom:20px;
+}
+
+.head {
+    display:flex;
+    flex-direction:row;
+}
+
+.head > span {
+    margin-right: 15px;
+}
+
+img {
+    width:90px;
+    height:auto;
+    margin-top:-21px;
+}
+
+.fiveDayRow {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:space-between;
+    align-items:space-between;
+}
+
+.fiveDayRow div {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:#3a5570;
+    color:white;
+    padding:10px;
+    width:185px;
+    height:255px;
+}
+
+.fiveDayRow div ul {
+    font-size:18px;
+}
+
+.fiveDayRow div ul li {
+    margin-top:5px;
+}
